@@ -7,22 +7,12 @@
 
 body {
 	font-family: iranyekan !important;
-	direction: rtl;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-input,
-textarea {
-	font-family: iranyekan !important;
+	direction: ltr;
 }
 html{
 	--first-color: #bbb;	
 	--second-color: green;
+	--third-color: black;
 }
 .social {
 	width: 3rem;
@@ -50,6 +40,81 @@ html{
 	color:var(--first-color);
 }
 .social-item:hover{
+	color: var(--second-color);
+	transition:color 0.5s;
+}
+.home{
+	display: flex;
+	height: 100vh;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15rem;
+
+}
+.profile-img{
+	max-width: 400px;
+	border-radius: 30% 70% 60% 40%;
+}
+.home h1{
+	font-family:'Times New Roman', Times, serif!important;
+	font-size: 3rem;
+	line-height: 1.7;
+}
+.name{
+	color: var(--second-color);
+	position: relative;
+}
+.name::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 0%;
+	background-color: var(--second-color);
+	animation: name-cover 1s;
+}
+@keyframes name-cover{
+	0%{
+		width: 0;
+	}
+	50%{
+		width: 100%;
+		left: 0%;
+	}
+	100%{
+		width:0% ;
+		left: 100%;
+	}
+}
+.navbar{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 4rem;
+	background-color: white;
+
+}
+.navbar-list{
+	display: flex;
+	justify-content: center;
+}
+.navbar-list ul{
+	display: flex;
+	list-style: none;
+}
+.navbar-list a{
+	text-decoration: none;
+	font-family:'Times New Roman', Times, serif!important;
+	color: var(--third-color);
+	font-size: 1.5rem;
+	padding:0 0.6rem ;
+	margin:0 0.6rem ;
+}
+.navbar-list a:hover{
 	color: var(--second-color);
 	transition:color 0.5s;
 }
