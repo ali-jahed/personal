@@ -1,6 +1,4 @@
-﻿@import url(fontiran.css);
-
-* {
+﻿* {
 	margin: 0;
 	padding: 0;
 }
@@ -117,4 +115,99 @@ html{
 .navbar-list a:hover{
 	color: var(--second-color);
 	transition:color 0.5s;
+}
+section{
+	width: 60%;
+	height: 100vh;
+	padding: 0 20%;
+	display: flex;
+	flex-direction: column;
+
+}
+.title1{
+	font-size: 2rem;
+	color: var(--second-color);
+	border-bottom: 2px solid var(--second-color);
+
+}
+.about-container{
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+
+}
+.about-img img{
+	width: 400px;
+}
+.about-text, .title2{
+	line-height: 1.8;
+	margin-right: 6rem;
+
+}
+.title2{
+	margin-bottom:1rem;
+}
+.skills-container{
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+
+}
+.skills-img img{
+	width: 400px;
+}
+.skills-body{
+	margin-left: 6rem;
+}
+.skill-info{
+	display: flex;
+	box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+	border-radius:0.8rem, 0.8rem, 0.2rem, 0.2rem ;
+	justify-content: space-between;
+	padding:0.5rem, 1rem ;
+	align-items: center;
+	position: relative;
+	margin-top: 1rem;
+}
+.skill-logo{
+	color: var(--second-color);
+	font-size: 2rem;
+	
+}
+.skill-name-logo{
+	display: flex;
+	align-items: center;
+}
+.skill-name-logo *{
+padding-left: 0.5rem;
+margin-bottom: 1rem;
+}
+.skill-bar{
+	position: absolute;
+	background-color: var(--second-color);
+	height: 0.25rem;
+	left: 0;
+	bottom: 0;
+	
+}
+.css{
+	width: 80%;
+}
+.html{
+	width: 85%;
+}
+.Bootstrap{
+	width: 70%;
+}
+.js{
+	width: 70%;
+}
+.py{
+	width: 60%;
+}
+.dj{
+	width: 60%;
+}
+.git{
+	width: 90%;
 }
